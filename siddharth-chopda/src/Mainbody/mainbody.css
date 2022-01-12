@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.mainbody{
+    width: 93%;
+    margin-top: 65px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.maintop{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+
+    
+}
+.maintop>img{
+        /* width: 400px; */
+        height: 300px;
+        border-radius: 50%;
+}
+.connect{
+    position: relative;
+    top: -265px;
+}
+.icons{
+    font-size: 40px !important;
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white !important;
+    
+}
+
+.about>p{
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.info{
+    margin-bottom: 80px;
+}
+.info>h1{
+    font-size: 45px;
+    text-align: center;
+    position: relative;
+}
+
+#resume{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.skillTitle >h1{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+}
+.skills{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+}
+.back_design{
+    position: relative;
+    top: -500px;
+    margin-bottom: -600px;
+    z-index: -10;
+    
+    
+}
+.c3{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    
+    position: relative;
+    left: 70%;
+    top: -70px;
+}
+
+.c1{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    top: 200px;
+    /* bottom: -8px; */
+    left: 380px;
+}
+.c2{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: relative;
+    top: 100px;
+    left: 0;
+}
+
+.c1,.c2,.c3{
+    background-color: rgba(238,238,238,1);
+    
+    border: 0.5px solid lightgray;
+    z-index: -100;
+    opacity: 1;
+    animation-name: circles;
+    animation-duration: 3s;
+}
+.top{
+    animation-name: topSlide;
+    animation-duration: 1s;
+}
+.left{
+    animation-name: leftSlide;
+    animation-duration: 1s;
+}
+.bottom{
+    animation-name: bottomSlide;
+    animation-duration: 1s;
+}
+
+@keyframes topSlide{
+    from {top: -40px;}
+    to {top: 0px;}
+}
+@keyframes leftSlide{
+    from {left: -40px;}
+    to {left: 0px;}
+}
+@keyframes bottomSlide{
+    from {bottom: -40px;}
+    to {bottom: 0px;}
+}
+
+@keyframes circles {
+    from { top: 0; left: 30;}
+    to {  top: 40; left: -90;  }
+    /* 100%{  top: 140; left: 190; } */
+  }
+
+  @media (max-width: 1366px){
+      .img1{
+          top: 650px;
+      }
+  }
+
+@media only screen and (max-width: 400px) {
+    @keyframes topSlide{
+        from {top: -40px;}
+        to {top: 0px;}
+    }
+    @keyframes leftSlide{
+        from {left: -40px;}
+        to {left: 0px;}
+    }
+    @keyframes bottomSlide{
+        from {bottom: -40px;}
+        to {bottom: 0px;}
+    }
+    
+    @keyframes circles {
+        from { top: 0; left: 30;}
+        to {  top: 40; left: -90;  }
+        /* 100%{  top: 140; left: 190; } */
+      }
+        .c1,.c2,.c3{
+            visibility: hidden;
+        }
+      .c1{
+          left: 130px;
+          top: -100px;
+      }
+      .c2{
+        top: -30px;
+      }
+      .c3{
+        left: 50%;
+      }
+}
